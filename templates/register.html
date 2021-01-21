@@ -1,0 +1,18 @@
+<form action = "/" method = "post">
+    {{form.hidden_tag() }}
+<!-- CSRF로부터 보호하는 데 필요한 작업 -->
+    {{form.username.label }}
+    {{form.username()}}
+
+    {{form.email.label}}
+    {{form.email()}}
+
+    {{form.password.label}}
+    {{form.password()}}
+
+    {{form.confirm_password.label}}
+    {{form.confirm_password()}}
+
+    {{form.submit()}}
+
+</form>1
